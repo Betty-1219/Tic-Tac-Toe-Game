@@ -1,0 +1,47 @@
+/* ── Design tokens ─────────────────────────────── */
+:root {
+  --color-bg: #0f0f1a;
+  --color-grid-bg: #1a1a2e;
+  --color-square-bg: #16213e;
+  --color-square-hover: #1f2d55;
+  --color-accent: #7c5cbf;
+  --color-x: #e94560;
+  --color-o: #0fc4b5;
+  --color-text: #e0e0e0;
+  --color-text-muted: #9e9ebd;
+}
+
+/* ── Reset / base ──────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+#root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
